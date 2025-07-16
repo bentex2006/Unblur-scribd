@@ -1,17 +1,28 @@
+* {
+    filter: none !important;
+    backdrop-filter: none !important;
+}
+
+div[style*="blur"],
+span[style*="blur"],
+p[style*="blur"] {
+    filter: none !important;
+    backdrop-filter: none !important;
+}
+
 .auto__doc_page_webpack_doc_page_blur_promo {
-  display:none !important;
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
 }
 
-.text_layer {
-  text-shadow: none !important;
-  color: black !important;
-}
-
-.newpage span.a {
-  color: black !important;
-  z-index: 9999 !important;
+.text_layer, .newpage span, span.a, p {
+    text-shadow: none !important;
+    color: black !important;
+    filter: none !important;
 }
 
 img {
-  opacity: 1 !important;
+    opacity: 1 !important;
+    filter: none !important;
 }
